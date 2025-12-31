@@ -1,0 +1,17 @@
+await ethers.provider.getCode("0x5FbDB2315678afecb367f032d93F642f64180aa3")
+await ImmoTitle.ownerOf(2);
+const ImmoTitle = await ethers.getContractAt("ImmoTitle", "0x5FbDB2315678afecb367f032d93F642f64180aa3");
+await ImmoTitle.ownerOf(2);await ImmoTitle.ownerOf(2);
+const ImmoTitle = await ethers.getContractAt("ImmoTitle", "0x5FbDB2315678afecb367f032d93F642f64180aa3");
+await c.tokenURI(1);
+await c.ownerOf(1);
+const c = new Contract("0x5FbDB2315678afecb367f032d93F642f64180aa3", abi, signer);
+const [signer] = await ethers.getSigners();
+const abi = (await artifacts.readArtifact("ImmoTitle")).abi;
+const { Contract } = require("ethers");
+const addr = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
+await c.ownerOf(1)
+const c = await ethers.getContractAt("ImmoTitle", "<NFT_CONTRACT_ADDRESS>");
+quit
+exit
+const c = await ethers.getContractAt("ImmoTitle", "<NFT_CONTRACT_ADDRESS>");

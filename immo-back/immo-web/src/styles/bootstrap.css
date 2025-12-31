@@ -1,0 +1,140 @@
+/* -------- Reset simple -------- */
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; }
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial;
+  color: var(--text);
+  background: var(--bg);
+}
+
+/* -------- Thème -------- */
+:root {
+  --bg: #f6f8fb;
+  --card: #ffffff;
+  --text: #0f172a;
+  --muted: #64748b;
+
+  --primary: #0ea5e9;
+  --primary-600: #0284c7;
+  --success: #10b981;
+  --danger: #ef4444;
+  --border: #e5e7eb;
+  --ring: #93c5fd;
+
+  --radius: 14px;
+  --shadow: 0 12px 34px rgba(2,6,23,.08);
+}
+
+/* -------- Layout de page -------- */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px 16px;
+}
+
+.stack { display: grid; gap: 16px; }
+.grid {
+  display: grid;
+  gap: 16px;
+}
+.grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
+/* -------- Carte -------- */
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 16px;
+}
+
+/* -------- Boutons -------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: #fff;
+  color: var(--text);
+  font-weight: 700;
+  cursor: pointer;
+}
+.btn:hover { background: #f8fafc; }
+.btn:focus { outline: 3px solid var(--ring); outline-offset: 2px; }
+
+.btn-primary {
+  border-color: var(--primary);
+  background: var(--primary);
+  color: #fff;
+}
+.btn-primary:hover { background: var(--primary-600); }
+
+.btn-ghost { background: #fff; }
+.btn-danger { border-color: #fecaca; color: #991b1b; }
+
+/* -------- Input / Select -------- */
+.input, .select {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 14px;
+  background: #fff;
+}
+.help { font-size: 12px; color: var(--muted); }
+
+/* -------- Header / Navbar -------- */
+.navbar {
+  position: sticky; top: 0; z-index: 10;
+  background: rgba(255,255,255,.75);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+}
+.navbar-content {
+  max-width: 1100px; margin: 0 auto; padding: 10px 16px;
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+}
+.brand {
+  display: flex; align-items: center; gap: 10px;
+  font-weight: 900; letter-spacing: .2px; color: var(--text);
+}
+.brand-dot {
+  width: 12px; height: 12px; border-radius: 999px;
+  background: linear-gradient(90deg,#8b5cf6,#06b6d4);
+}
+.nav {
+  display: inline-flex; gap: 8px;
+}
+.nav a {
+  text-decoration: none;
+  color: var(--muted);
+  padding: 8px 10px;
+  border-radius: 8px;
+}
+.nav a.active,
+.nav a:hover {
+  color: var(--text);
+  background: #eef2ff;
+}
+
+/* -------- Footer -------- */
+.footer {
+  color: var(--muted);
+  font-size: 12px;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* -------- Helpers -------- */
+.center-screen {
+  min-height: calc(100vh - 64px);
+  display: grid; place-items: center;
+}
+.row {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+}

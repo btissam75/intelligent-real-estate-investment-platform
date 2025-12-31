@@ -1,0 +1,58 @@
+/* src/ui/page.css */
+:root{
+  --bg:#f6f7fb; --card:#ffffff; --ink:#1a1a1a; --sub:#6b7280; --line:#e5e7eb;
+  --pri:#dc2626; --pri-2:#b91c1c; --acc:#ef4444;
+}
+
+/* La page s’insère dans .container (AppShell) : même largeur partout */
+.page{
+  display: grid;
+  gap: 12px;
+}
+
+/* En-tête homogène */
+.page-header{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: space-between;
+}
+.page-titles{min-width: 0}
+.page-title{
+  margin: 0;
+  font-family: var(--font-title, Georgia, serif);
+  font-weight: 900;
+  color: #9a1c1c; /* rouge titre, cohérent topbar */
+  letter-spacing: .2px;
+  font-size: 22px;
+}
+.page-sub{
+  font-size: 12px;
+  color: var(--sub);
+  margin-top: 2px;
+}
+.page-actions{display:flex; gap:8px; align-items:center}
+
+/* Grille unifiée (mêmes gutters sur tout le site) */
+.grid{
+  display: grid;
+  gap: 10px;
+}
+
+/* Carte standardisée */
+.card{
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--card);
+  padding: 12px;
+}
+
+/* Utilitaires */
+.row-between{
+  display:flex; align-items:center; justify-content:space-between;
+}
+
+/* Responsive : on aligne la densité avec le Dashboard */
+@media (max-width: 1024px){
+  .grid{ grid-template-columns: 1fr !important; }
+}

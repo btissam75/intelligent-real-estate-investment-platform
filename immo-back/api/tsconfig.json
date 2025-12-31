@@ -1,0 +1,56 @@
+// // {
+// //   "compilerOptions": {
+// //     "target": "ES2020",
+// //     "module": "CommonJS",
+// //     "moduleResolution": "node",
+// //     "strict": true,
+// //     "esModuleInterop": true,
+// //     "skipLibCheck": true,
+// //     "isolatedModules": true,
+// //     "types": ["node"],
+// //     "noUncheckedIndexedAccess": true,
+// //     "exactOptionalPropertyTypes": true,
+// //     "sourceMap": true,
+// //     "outDir": "dist",
+// //     "jsx": "react-jsx"
+// //   },
+// //   "include": ["src", "../immo-web/src/auth"]
+// // }
+// {
+//   "compilerOptions": {
+//     "target": "ES2020",
+//     "module": "CommonJS",
+//     "moduleResolution": "node",
+//     "strict": true,
+//     "esModuleInterop": true,
+//     "skipLibCheck": true,
+//     "isolatedModules": true,
+//     "types": ["node", "express-session"],
+//     "typeRoots": ["./node_modules/@types", "./types"],
+//     "noUncheckedIndexedAccess": true,
+//     "exactOptionalPropertyTypes": true,
+//     "sourceMap": true,
+//     "outDir": "dist",
+//     "jsx": "react-jsx"
+//   },
+//   "include": ["src", "src/types", "../immo-web/src/auth"]
+// }
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "lib": ["ES2022", "DOM"],
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "isolatedModules": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "types": ["node", "express-session"],
+    "sourceMap": true,
+    "outDir": "dist",
+    "jsx": "react-jsx"
+  },
+  "include": ["src", "src/types", "../immo-web/src/auth", "src/server/index.js"] 
+}

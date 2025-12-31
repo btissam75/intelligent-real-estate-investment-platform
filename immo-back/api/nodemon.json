@@ -1,0 +1,13 @@
+{
+  "watch": ["src"],
+  "ext": "ts,json",
+  "ignore": [
+    "node_modules",
+    ".git",
+    "dist",
+    "*.log",
+    ".env",
+    "package-lock.json"
+  ],
+  "exec": "ts-node src/server.ts"
+}
