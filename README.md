@@ -17,9 +17,13 @@ This repository is organized as a **monorepo**, containing the backend, frontend
 
 ---
 
+
+
+
+https://github.com/user-attachments/assets/acab670d-9a83-4137-995f-b365ff45fe50
+
+
 ## 🏗️ Project Structure
-
-
 ---
 
 ## 🛠️ Tech Stack
