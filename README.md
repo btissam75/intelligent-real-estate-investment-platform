@@ -6,6 +6,12 @@ Full-stack real-estate investment platform combining blockchain-based property t
 
 The platform brings property discovery, investment workflows, digital ownership, and AI-assisted decision support into one modular application. Blockchain components provide transparent transaction logic, while the RAG assistant retrieves relevant platform knowledge before generating contextual answers for investors.
 
+## Video Demo
+
+▶️ **Watch the platform demonstration:**
+
+https://github.com/user-attachments/assets/acab670d-9a83-4137-995f-b365ff45fe50
+
 ## Core features
 
 - Browse and evaluate real-estate investment opportunities
